@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Main
 {
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
     // Task 1: Cat years, Dog years
@@ -15,9 +14,8 @@ public class Main
     int y = sc.nextInt();
     int[] years = Dinglemouse.humanYearsCatYearsDogYears(y);
     System.out.println("Массив состоящий из человеческих, кошачьих и собачьих лет:");
-    for (int i = 0; i < years.length; i++)
-    {
-      System.out.print(years[i] + " ");
+    for (int year : years) {
+      System.out.print(year + " ");
     }
     System.out.println();
     System.out.println();
